@@ -29,6 +29,46 @@
             <section>
                 <h2>Kontakt oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post">
+                    <label for="navn">Navn</label>
+                    <input type="text" name="navn" placeholder="Nora Norman.." id="navn" maxlength="45" required>
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="emne" placeholder="hva handler om?">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        Ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio" name="valg">
+                        <label>
+                            Kanskje
+                            <input type="radio" name="valg">
+                        </label>
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                    <select name="fav">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Kebab">Kebab</option>
+                    </select>
+                    </label>
+                </form>
+            </section>
         </main>
         <footer>2024 Anna</footer>
     </body>
