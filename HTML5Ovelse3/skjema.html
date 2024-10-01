@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Skjema</title>
+    </head>
+    <body>
+        <header>
+            <h1> Løsningforslag: Øvelse 3</h1>
+        </header>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                    <li><a href="validering.html">Valideringsoppgave</a></li>
+                    <li><a href="oppskrift.html">Oppskrift</a></li>
+                    <li><a href="nettside-mal.html">Nettside-mal</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <h2>Registrering</h2>
+            <form>
+                <label>
+                    <input type="text" pattern="[A-Z-zøæåØÆÅ ]{2,}" required placeholder="Nora Nordman..">
+                </label>
+                <label>
+                    E-post
+                    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no">
+                </label>
+
+                <label>
+                    Passord
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required placeholder="********">
+                </label>
+
+                <label>
+                    Alder
+                    <input type="number" min="18" max="88" required>
+                </label>
+
+                <label>
+                    Telefon
+                    <input type="tel" pattern="[0-9] {8-12}">
+                </label>
+
+                <label>
+                    Fødselsdato
+                    <input type="date" max="2023-12-31" required>
+                </label>
+
+                <fieldset>
+                    <legend> Kjønn</legend>
+
+                    <label>
+                        Mann
+                        <input type="radio" name="gender" value="man">
+                    </label>
+                    <label>
+                        Kvinne
+                        <input type="radio" name="gender" value="female">
+                    </label>
+
+                    <label>
+                        Annet
+                        <input type="radio" name="gender" value="other">
+                    </label>
+                </fieldset>
+
+                <label>
+                    Land
+                    <select required>
+                        <option value="">Velg et land</option>
+                        <option value="norge">Norge</option>
+                        <option value="danmark">Danmark</option>
+                        <option value="sverige">Sverige</option>
+                    </select>
+                </label>
+
+                <label>
+                    Godkjenn personvern
+                    <input type="checkbox" required>
+                </label>
+
+                    
+                <input type="submit" value="Send">
+
+            </form>
+        </main>
+        <footer>
+            <p>Anna Jamissen</p>
+            <p><a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
+        </footer>
+    </body>
+</html>
