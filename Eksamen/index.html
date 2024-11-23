@@ -9,15 +9,17 @@
 <body>
 <div id="grid-container">
     <header id="global-header">
-        <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
+        <a href="index.html"><img id="main-logo" src="img/logo.png"></a>
         <nav>
             <ul class="flex-menu">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="#element">Produkter</a></li>
+                <li><a href="#otherElement">Kategorier</a></li>
+                <li><a href="#kontaktElement">Kontakt oss</a></li>
             </ul>
-            <img id="shopping-cart" src="img/icons/handelvogn.png"><a href="checkout.html"></a>
+            <a href="checkout.html"><img id="shopping-cart" src="img/icons/shoppingcart.jpg"></a>
+            <a href="#"><img id="account" src="img/icons/account1.png"></a>
+            <a href="#"><img id="favourities" src="img/icons/favourties1.png"></a>
             <form>
                 <label for="search">Søk</label>
                 <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
@@ -38,37 +40,40 @@
             <!-- Et bilde som illustrerer de beste tilbudene -->
         </section>
         <section>
+            <div id="element">
             <h2>Våre mest populære produkter</h2>            
             <h3>Oppdag det beste av det beste</h3>
             <button type="button">New product</button>
             <button type="button">Special Price</button>
             <button type="button">Best Sellers</button>
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article>
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article> 
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article>
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article>
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article>
             <article class="product-card">
-                <img src="img/product.jpg" alt="product name">
+                <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>
             </article>
+            </div>
         </section>
         <section>
+            <div id="otherElement">
             <h2>Vår mest populære kategorier</h2>
             <h3>Oppdag det beste av det beste</h3>
             <category>Category 1</category>
@@ -76,6 +81,7 @@
             <category>Category 1</category>
             <category>Category 1</category>
             <category>Category 1</category>
+            </div>
         </section>
         <section>
             <h2>Reviews</h2>
@@ -122,6 +128,7 @@
         </section>
     </main>
     <footer>
+        <div id="kontaktElement">
         <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
         <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
         <h3>KONTAKT</h3>
@@ -135,11 +142,12 @@
         <a href="#">Produkter</a>
         <a href="#">Kategorier</a>
         <a href="#">Kontakt oss</a>
-        <h3>Sosiale Medier</h3>
-        <a href="http://www.facebook.com" target="_blank"><img src="img/icons/facebook.png"></a>
-        <a href="http://www.instagram.com" target="_blank"><img src="img/icons/instagram.png"></a>
-        <a href="http://www.linkedin.com" target="_blank"><img src="img/icons/linkedin.png"></a>
-        <a href="http://www.pinterest.com" target="_blank"><img src="img/icons/pinterest.png"></a>
+        <h3>SOSIALE MEDIER</h3>
+        <a href="http://www.facebook.com" target="_blank"><img src="img/icons/fb.png"></a>
+        <a href="http://www.instagram.com" target="_blank"><img src="img/icons/insta.png"></a>
+        <a href="http://www.linkedin.com" target="_blank"><img src="img/icons/lnd.png"></a>
+        <a href="http://www.pinterest.com" target="_blank"><img src="img/icons/pienterest.png"></a>
+    </div>
     </footer>
 </div>
 </body>
