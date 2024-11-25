@@ -30,7 +30,7 @@
     <main>
         <h1>Kasse</h1>
         <article>
-        <h2>1.SHOPPINGBAGEN DIN</h2>
+        <h2>1. SHOPPINGBAGEN DIN</h2>
         <img src="img/main_product.png">
         PRODUCT NAME
         kr 1999
@@ -57,31 +57,51 @@
         <img src="img/icons/bin.png">
         </article>
         <article>
-            <h2>DINE OPPLYSNINGER</h2>
+            <h2>2. DINE OPPLYSNINGER</h2>
             <h3>Leveringsadresse</h3>
             <form>
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value="Nora*" required><br>
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname" value="Nordman*" required><br>
-                <label for="fname">Gate adresse</label><br>
+                <label for="gateadresse">Gate adresse</label><br>
                 <input type="text" id="gateadresse" name="gateadresse" value="BRA Veien 4*" required><br>
-                <label for="lname">Postnummer</label><br>
-                <input type="text" id="Postnummer" name="Postnummer" value="1752*" required><br>
-                <label for="lname">Poststed</label><br>
-                <input type="text" id="Poststed" name="Poststed" value="Halden*" required><br><br>
+                <label for="postnummer">Postnummer</label><br>
+                <input type="text" id="postnummer" name="postnummer" value="1752*" required><br>
+                <label for="poststed">Poststed</label><br>
+                <input type="text" id="poststed" name="poststed" value="Halden*" required><br><br>
                 <h3>Kontaktinformasjon</h3>
-                <label for="lname">E-post</label><br>
-                <input type="text" id="E-post" name="E-post" value="annabb@hiof.no..*" required><br>
-                <label for="lname">Telefon</label><br>
-                <input type="text" id="Telefon" name="Telefon" value="+4749***018" required><br><br>
-
-                <input type="submit" value="Submit">
-
+                <label for="e-post">E-post</label><br>
+                <input type="text" id="e-post" name="e-post" value="annabb@hiof.no..*" required><br>
+                <label for="telefon">Telefon</label><br>
+                <input type="text" id="telefon" name="telefon" value="+4749***018" required><br><br>
               </form>
         </article>
-
-
+        <article>
+            <h2>3. LEVERING</h2>
+            <h3>Leveringsvalg</h3>
+            <form>
+                <input type="radio" id="expresslevering" name="levering" value="Express">
+                <label for="expresslevering"> Express hjemlevering</label><br>
+                <input type="radio" id="expresspakke" name="levering" value="Express Pakke">
+                <label for="expresspakke"> Express Pakke til utleveringssted</label><br>
+                <input type="radio" id="standardlevering" name="levering" value="Standard">
+                <label for="standardlevering"> Standard Hjemlevering</label>
+              </form>
+        </article>
+        <article>
+            <h2>4. BETALING</h2>
+            <h3>BETAL MED KORT</h3>
+            <form>
+                <label for="kortnummer">Kortnummer</label><br>
+                <input type="text" id="kortnummer" name="kortnummer" value="342342***4435" required><br>
+                <label for="dato">Utløpsdato</label><br>
+                <input type="text" id="dato" name="dato" value="mm/dd/yyyy" required><br>
+                <label for="cvs//cvv">CVS/CVV</label><br>
+                <input type="text" id="cvs//cvv" name="cvs//cvv" value="CVS//CVV*" required><br>
+              </form>
+        </article>
+        <input type="submit" value="Submit">
     </main>
     <footer>
         <div id="kontaktElement">
