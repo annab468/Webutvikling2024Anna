@@ -1,10 +1,88 @@
 
 html {
     scroll-behavior: smooth;
-    /*Adds smooth scrolling instead of snapping to element*/
+    
   }
 
+   
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left .search {
+    margin-right: 20px;              
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
   
+.left nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+.left nav ul li {
+    margin-right: 20px;              
+  }
+  
+.left nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+
+.logo {
+    flex-grow: 1;                   
+    text-align: center;
+  }
+  
+.logo img {
+    width: 150px;                  
+  }
+  
+ 
+.right {
+    display: flex;
+    align-items: center;          
+  }
+  
+.right nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;             
+  }
+  
+.right nav ul li {
+    margin-left: 20px;              
+  }
+  
+.right nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+.right .user-panel a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
 
   ul.breadcrumb {
     padding: 10px 16px;
@@ -12,26 +90,26 @@ html {
     background-color: #eee;
   }
   
-  /* Display list items side by side */
+ 
   ul.breadcrumb li {
     display: inline;
     font-size: 18px;
   }
   
-  /* Add a slash symbol (/) before/behind each list item */
+ 
   ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
   }
   
-  /* Add a color to all links inside the list */
+ 
   ul.breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
   }
   
-  /* Add a color on mouse-over */
+ 
   ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
