@@ -11,24 +11,33 @@
 <div>
     <header>
         <div class="left">
-            <input type="search" placeholder="Her kan du søke etter produkter..." class="search">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#element">Produkter</a></li>
-                </ul>
-            </nav>
+            <div class="search-container">
+                <input type="search" placeholder="Her kan du søke etter produkter..." class="search">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="#element">Produkter</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="logo">
             <a href="index.html"><img id="main-logo" src="img/logo.png"></a>
         </div>
         <div class="right">
-            <nav>
-                <ul>
-                    <li><a href="#otherElement">Kategorier</a></li>
-                    <li><a href="#kontaktElement">Kontakt oss</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#otherElement">Kategorier</a></li>
+                        <li><a href="#kontaktElement">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="user-panel">
                 <a href="#" class="fa fa-user"></a>
                 <a href="#" class="fa fa-heart"></a>
@@ -50,11 +59,13 @@
         </section>
         <section>
             <div id="element">
-            <h2>Våre mest populære produkter</h2>            
-            <h3>Oppdag det beste av det beste</h3>
-            <button type="button">New product</button>
-            <button type="button">Special Price</button>
-            <button type="button">Best Sellers</button>
+                <div id="populære-produkter">
+                    <h2>Våre mest populære produkter</h2>     
+                    <h3>Oppdag det beste av det beste</h3>
+                    <button type="button">New product</button>
+                    <button type="button">Special Price</button>
+                    <button type="button">Best Sellers</button>
+                </div>
             <article class="product-card">
                 <a href="product.html"><img src="img/product.jpg" alt="product name"></a>
                 <p>1999 kr</p>

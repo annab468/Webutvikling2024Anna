@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     padding: 15px;
     gap: 10px;
+    margin: 40px;
 }
 
 header {
@@ -18,31 +19,76 @@ header {
     align-items: center;
     padding: 10px 20px;
 }
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 100px;
+    margin: 20px;
+}
+
 .left {
     display: flex;
     align-items: center;
+    gap: 150px;
+    
 }
 
 .left .search {
-    margin-right: 20px;              
-    padding: 5px 10px;
+    margin-right: 40px;
+    width: 100%;              
+    padding: 10px 50px;
+    padding-left: 10px;
+    font-size: 14px;
     border-radius: 15px;
     border: 1px solid #ccc;
+    background: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/svgs/solid/search.svg') no-repeat right 10px center;
+    background-size: 20px;
   }
   
+.search::placeholder {
+    color: #777;
+    font-style: italic;
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);  
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+.search-btn i {
+    font-size: 20px;
+    color: #333;
+  }
+  
+
 .left nav ul {
     display: flex;
     list-style-type: none;
   }
   
 .left nav ul li {
-    margin-right: 20px;              
+    margin-right: 20px;   
+    margin-left: 30px;           
   }
   
 .left nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 25px;
   }
   
 
@@ -52,13 +98,17 @@ header {
   }
   
 .logo img {
-    width: 150px;                  
+    width: 150px;   
+    margin-right: 20px;
+    margin-left: 20px;               
   }
   
  
 .right {
     display: flex;
-    align-items: center;          
+    align-items: center;   
+    
+           
   }
   
 .right nav ul {
@@ -68,21 +118,59 @@ header {
   }
   
 .right nav ul li {
-    margin-left: 20px;              
+    margin-left: 20px; 
+    margin-left: 30px;             
   }
   
 .right nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 25px;
   }
   
 .right .user-panel a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 25px;
     padding: 5px 10px;
   }
+
+
+
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 auto;
+    object-fit: cover;
+    width: 600px;
+
+}
+
+
+#element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#populære-produkter {
+    font-size: 40px;
+    position: relative;
+    height: 100vh;
+    
+}
+
 
   ul.breadcrumb {
     padding: 10px 16px;
