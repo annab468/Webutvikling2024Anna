@@ -585,10 +585,12 @@ nav ul li a:hover {
 .stars .fa {
     font-size: 1rem;
     color: #ffc107; 
-    
     margin: 0 2px;
 }
 
+.stars .fa:not(.checked) {
+    color: #ddd;
+}
 
 .review-card p {
     font-size: 0.9rem;
@@ -607,6 +609,131 @@ nav ul li a:hover {
         grid-template-columns: 1fr; 
     }
 }
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+
+
+.footer-logo-container {
+    margin-left: 0;
+    padding: 20px 0;
+}
+
+.footer-logo-img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-container p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-contact h3,
+.footer-links h3,
+.footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.footer-contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.footer-social .social-icons a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #007bff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; 
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .footer-contact,
+    .footer-links,
+    .footer-social {
+        text-align: left;
+    }
+}
+
+
 
   ul.breadcrumb {
     padding: 10px 16px;
