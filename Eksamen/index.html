@@ -13,7 +13,7 @@
             <div class="search-container">
                 <input type="search" placeholder="Søk her" class="search-input">
                 <button class="search-btn">
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-search search-icon"></i>
                 </button>
             </div>
             <div class="menu-left">
@@ -26,7 +26,9 @@
             </div>
         </div>
         <div class="header-center">
-            <a href="index.html" class="logo"><img id="main-logo" src="img/logo.png"></a>
+            <a href="index.html" class="logo">
+                <img id="main-logo" src="img/logo.png" alt="logo">
+            </a>
         </div>
         <div class="header right">
                 <nav class="menu-right">
@@ -43,16 +45,41 @@
         </div>
     </header>
     <main>
-        <section id="banner">
-            <!-- Definerer en seksjon for spesifikke innholdstyper, her brukt for de beste tilbudene -->
-            <div>
-            <h2>Banner</h2>
-            <!-- Overskrift for seksjonen -->
-            <a href="#">Shop nå -></a>
-            <!-- En lenke som oppfordrer brukeren til å handle nå -->
+        <section id="mobile-banner" class="mobile-banner">
+            <div class="mobile-banner-content">
+                <img src="img/other_product.png" alt="Mobile banner" class="mobile-banner-image">
+                <div class="mobile-banner-text">
+                    <h1 class="mobile-banner-content">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h1>
+                    <p class="mobile-banner-subtitle">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." </p>
+                    <a href="#" class="mobile-banner-btn">LES MER</a>
+                </div>
             </div>
-            <img src="#">
-            <!-- Et bilde som illustrerer de beste tilbudene -->
+        </section>
+        <section id="product-slider" class="slider">
+            <div class="slider-container">
+                <div class="slider-item">
+                    <img src="img/other_product.png" alt="slider1">
+                    <div class="slider-info">
+                        <h2>Product 1</h2>
+                        <p>Product 1 is nice and you should have it.</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/other_product2.webp" alt="slider2">
+                    <div class="slider-info">
+                        <h2>Product 2</h2>
+                        <p>Product 2 is nice and you can have it.</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="img/doggo.jpg" alt="slider3">
+                    <div class="slider-info">
+                        <h2>Product 3</h2>
+                        <p>Product 3 is the best.</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
         <section>
             <div id="element">

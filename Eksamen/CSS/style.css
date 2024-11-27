@@ -6,97 +6,117 @@
 }
 
 
-
-
 body {
     font-family: Arial, sans-serif;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px 30px;
     background-color: #f8f8f8;
     flex-wrap: wrap;
 }
-.header-left, .header-center, .header-right {
-    flex: 1 1 100%;
+.header-left {
+    display: flex;
+    flex: 1 1 auto;
     text-align: center;
+    gap: 15px;
 }
 
-
-.search-input {
-    width: 80%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
+.logo img {
+    max-height: 50px;
+    
 }
 
-
-.search::placeholder {
-    color: #777;
-    font-style: italic;
-}
 .search-container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-  }
+    width: 100%;
+    max-width: 250px;
+  } 
 
-
-.search-btn {
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-
-.search-btn:hover {
-    background-color: #0056b3;
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    margin: 10px 0;
-} 
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    pointer-events: none;
+}
+
+.header-center {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    gap: 15px;
+}
+
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 15px;
-    margin-top: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
     color: #007bff;
 }
 
+
 .user-panel {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 15px;
-    margin-top: 10px;
 }
+
 .user-panel a {
     font-size: 1.2rem;
     color: black;
     text-decoration: none;
 }
+
+.user-panel a:hover {
+    color: #007bff;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        flex-wrap: nowrap;
+    }
+
+    .search-container {
+        max-width: 300px;
+    }
+}
+
+
 .product-card {
     display: grid; 
     grid-template-columns: 1fr; 
