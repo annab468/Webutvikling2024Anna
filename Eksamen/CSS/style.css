@@ -126,6 +126,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -143,13 +144,14 @@ nav ul li a:hover {
     font-size: 1.5rem;
     margin-bottom: 10px;
     line-height: 1.4;
+    color: #333;
 }
 
 .mobile-banner-subtitle {
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.6;
-    color: #ddd;
+    color: #555;
 }
 
 .mobile-banner-btn {
@@ -162,22 +164,12 @@ nav ul li a:hover {
     border-radius: 25px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .mobile-banner-btn:hover {
     background-color: #0056b3;
 }
 
-@media screen and (max-width: 768px) {
-    #product-slider {
-        display: none;
-    }
-
-    .mobile-banner {
-        display: flex; 
-    }
-}
 
 
 .slider {
@@ -189,33 +181,44 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
+    border-radius: 20px;
 }
 
 .slider-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .slider-item {
     min-width: 100%;
+    height: 100%;
     position: relative;
     text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .slider-item img {
     width: 100%;
-    height: 60vh;
+    height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+    display: block;
 }
 
 .slider-info {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 40%;
+    right: 20%;
+    transform: translateY(0);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    max-width: 40%;
+    text-align: right;
 }
 
 .slider-btn {
@@ -244,41 +247,24 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.details-section details {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px;
-}
 
-details summary {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-details summary .summary-icon {
-    font-size: 1.2rem;
-    color: #007bff;
-}
-
-details[open] summary .summary-icon {
-    transform: rotate(45deg);
-}
-
-details p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #333;
-}
 
 @media screen and (max-width: 768px) {
     #product-slider {
         display: none;
+    }
+
+    .mobile-banner {
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #product-slider {
+        display: flex;
+    }
+    .mobile-banner {
+        display: none; 
     }
 }
 
