@@ -310,20 +310,7 @@ nav ul li a:hover {
     
 }
 
-#element {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
-#populære-produkter {
-    font-size: 30px;
-    position: relative;
-    height: 100vh;
-    
-}
 
 
   ul.breadcrumb {
