@@ -1,16 +1,10 @@
 
-html {
-    scroll-behavior: smooth;
-    
-  }
-
    
 body {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 10px;
-    margin: 40px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; 
 }
 
 header {
@@ -18,14 +12,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    gap: 100px;
-    margin: 20px;
+.container {
+    max-width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; /
 }
 
 .left {
@@ -99,8 +92,8 @@ header {
   
 .logo img {
     width: 150px;   
-    margin-right: 20px;
-    margin-left: 20px;               
+    margin-right: 10px;
+    margin-left: 10px;               
   }
   
  
@@ -139,22 +132,45 @@ header {
 
 
 .product-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-gap: 15px;
 }
 
-.product-card img {
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
     max-width: 100%;
     height: auto;
-    flex: 1 1 auto;
-    object-fit: cover;
-    width: 600px;
-
+    border-radius: 10px;
 }
 
+.product-item p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.buttons {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 auto; 
+    max-width: 150px;
+    
+}
 
 #element {
     display: flex;
@@ -165,7 +181,7 @@ header {
 }
 
 #populære-produkter {
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     height: 100vh;
     
