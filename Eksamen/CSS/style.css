@@ -767,12 +767,31 @@ body {
     background-color: #eee;
     display: flex;
     gap: 5px;
+    align-items: center;
+    font-size: 14px;
 }
 
 .breadcrumb li a {
     color: #555;
     text-decoration: none;
+    transition: color 0.3s;
 }
+
+.breadcrumb li a:hover {
+    color: #000;
+}
+
+.breadcrumb .separator {
+    color: #888;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.breadcrumb .current {
+    font-weight: bold;
+    color: #000;
+}
+
 
 .product-page {
     display: flex;
