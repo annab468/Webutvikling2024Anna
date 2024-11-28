@@ -8,135 +8,256 @@
     <title>Nettbutikk | Checkout</title>
 </head>
 <body>
-<div>
-    <header>
-        <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
-        <nav>
-            <ul class="flex-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#element">Produkter</a></li>
-                <li><a href="#otherElement">Kategorier</a></li>
-                <li><a href="#kontaktElement">Kontakt oss</a></li>
-            </ul>
-            
-            <a href="#" class="fa fa-user"></a>
-            <a href="#" class="fa fa-heart"></a>
-            <a href="checkout.html" class="fa fa-shopping-cart"></a>
-            <form>
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                <input type="submit" value="søk">
-            </form>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div class="search-container">
+                    <input type="search" placeholder="Søk her" class="search-input">
+                </div>
+                <div class="menu-left">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Hjem</a></li>
+                            <li><a href="#element">Produkter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-center">
+                <a href="index.html" class="logo">
+                    <img id="main-logo" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-right">
+                    <nav class="menu-right">
+                        <ul>
+                            <li><a href="#otherElement">Kategorier</a></li>
+                            <li><a href="#kontaktElement">Kontakt oss</a></li>
+                        </ul>
+                    </nav>
+                <div class="user-panel">
+                    <a href="#" class="fa fa-user"></a>
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="checkout.html" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </header>
     <main>
-        <h1>Kasse</h1>
-        <article>
-        <h2>1. SHOPPINGBAGEN DIN</h2>
-        <img src="img/main_product.png">
-        PRODUCT NAME
-        kr 1999
-        Farge: beige
-        Størrelse: 
-        Antall:
-        <img src="img/icons/favourities.png">
-        <img src="img/icons/bin.png">
-        <img src="img/main_product.png">
-        PRODUCT NAME
-        kr 1999
-        Farge: beige
-        Størrelse: 
-        Antall:
-        <img src="img/icons/favourities.png">
-        <img src="img/icons/bin.png">
-        <img src="img/main_product.png">
-        PRODUCT NAME
-        kr 1999
-        Farge: beige
-        Størrelse: 
-        Antall:
-        <img src="img/icons/favourities.png">
-        <img src="img/icons/bin.png">
-        </article>
-        <article>
+        <h1>
+            <div class="kasse">Kasse</div>
+        </h1>
+        <section class="shopping-cart">
+            <h2>1. SHOPPINGBAGEN DIN</h2>
+            <div class="checkout-cart-item">
+                <img src="img/main_product.png" alt="Product image" class="checkout-image">
+                <div class="checkout-item-details">
+                    <p class="product-name-checkout">PRODUCT NAME</p>
+                    <p class="product-price-checkout">Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <div class="checkout-product-options">
+                        <div class="option">
+                            <label for="size">Størrelse:</label>
+                            <select id="size" name="size">
+                                <option value="S">S</option>
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="quantity">Antall:</label>
+                            <select id="quantity" name="quantity">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-actions">
+                    <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
+                    <a href="#" class="fa fa-trash" title="Remove"></a>
+                </div>
+            </div>
+            <div class="checkout-cart-item">
+                <img src="img/main_product.png" alt="Product image" class="checkout-image">
+                <div class="checkout-item-details">
+                    <p class="product-name-checkout">PRODUCT NAME</p>
+                    <p class="product-price-checkout">Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <div class="checkout-product-options">
+                        <div class="option">
+                            <label for="size">Størrelse:</label>
+                            <select id="size" name="size">
+                                <option value="S">S</option>
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="quantity">Antall:</label>
+                            <select id="quantity" name="quantity">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-actions">
+                    <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
+                    <a href="#" class="fa fa-trash" title="Remove"></a>
+                </div>
+            </div>
+            <div class="checkout-cart-item">
+                <img src="img/main_product.png" alt="Product image" class="checkout-image">
+                <div class="checkout-item-details">
+                    <p class="product-name-checkout">PRODUCT NAME</p>
+                    <p class="product-price-checkout">Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <div class="checkout-product-options">
+                        <div class="option">
+                            <label for="size">Størrelse:</label>
+                            <select id="size" name="size">
+                                <option value="S">S</option>
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="quantity">Antall:</label>
+                            <select id="quantity" name="quantity">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-actions">
+                    <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
+                    <a href="#" class="fa fa-trash" title="Remove"></a>
+                </div>
+            </div>
+        </section>            
+        <section class="user-info">
             <h2>2. DINE OPPLYSNINGER</h2>
+            
             <h3>Leveringsadresse</h3>
+            <form class="address-form">
+                <div>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value="Nora*" required>
+                </div>
+                <div>    
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" value="Nordman*" required>
+                </div>
+                <div>    
+                    <label for="gateadresse">Gate adresse</label>
+                    <input type="text" id="gateadresse" name="gateadresse" value="BRA Veien 4*" required>
+                </div>
+                <div>
+                    <label for="postnummer">Postnummer</label>
+                    <input type="text" id="postnummer" name="postnummer" value="1752*" required>
+                </div>
+                <div>
+                    <label for="poststed">Poststed</label>
+                    <input type="text" id="poststed" name="poststed" value="Halden*" required>
+                </div>
+            </form>
+            <h3>Kontaktinformasjon</h3>
+            <form class="contact-form">
+                <div>
+                    <label for="e-post">E-post</label>
+                    <input type="text" id="e-post" name="e-post" value="annabb@hiof.no..*" required>
+                </div>
+                <div>
+                    <label for="telefon">Telefon</label>
+                    <input type="text" id="telefon" name="telefon" value="+4749***018" required>
+                </div>
+            </form>
             <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="Nora*" required><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Nordman*" required><br>
-                <label for="gateadresse">Gate adresse</label><br>
-                <input type="text" id="gateadresse" name="gateadresse" value="BRA Veien 4*" required><br>
-                <label for="postnummer">Postnummer</label><br>
-                <input type="text" id="postnummer" name="postnummer" value="1752*" required><br>
-                <label for="poststed">Poststed</label><br>
-                <input type="text" id="poststed" name="poststed" value="Halden*" required><br><br>
-                <h3>Kontaktinformasjon</h3>
-                <label for="e-post">E-post</label><br>
-                <input type="text" id="e-post" name="e-post" value="annabb@hiof.no..*" required><br>
-                <label for="telefon">Telefon</label><br>
-                <input type="text" id="telefon" name="telefon" value="+4749***018" required><br><br>
-              </form>
-        </article>
-        <article>
+                <input type="submit" value="Lagre">
+                <a href="#">Avbryt</a>
+            </form>
+        </section>
+        <section class="delivery-options">
             <h2>3. LEVERING</h2>
             <h3>Leveringsvalg</h3>
             <form>
                 <input type="radio" id="expresslevering" name="levering" value="Express">
                 <label for="expresslevering"> Express hjemlevering</label><br>
+    
                 <input type="radio" id="expresspakke" name="levering" value="Express Pakke">
                 <label for="expresspakke"> Express Pakke til utleveringssted</label><br>
+    
                 <input type="radio" id="standardlevering" name="levering" value="Standard">
                 <label for="standardlevering"> Standard Hjemlevering</label>
-              </form>
-        </article>
-        <article>
+            </form>
+        </section>
+        <section class="payment-section">
             <h2>4. BETALING</h2>
             <h3>BETAL MED KORT</h3>
+            <form class="payment-form">
+                <label for="kortnummer">Kortnummer</label>
+                <input type="text" id="kortnummer" name="kortnummer" value="342342***4435" required>
+    
+                <label for="dato">Utløpsdato</label>
+                <input type="text" id="dato" name="dato" value="mm/dd/yyyy" required>
+    
+                <label for="cvs//cvv">CVS/CVV</label>
+                <input type="text" id="cvs//cvv" name="cvs//cvv" value="CVS//CVV*" required>
+            </form>
+    
+            <div class="total-cost">
+                <p>Å betale inkl. mva</p>
+                <h3>1 199kr</h3>
+            </div>
+    
             <form>
-                <label for="kortnummer">Kortnummer</label><br>
-                <input type="text" id="kortnummer" name="kortnummer" value="342342***4435" required><br>
-                <label for="dato">Utløpsdato</label><br>
-                <input type="text" id="dato" name="dato" value="mm/dd/yyyy" required><br>
-                <label for="cvs//cvv">CVS/CVV</label><br>
-                <input type="text" id="cvs//cvv" name="cvs//cvv" value="CVS//CVV*" required><br>
-              </form>
-              Å betale inkl. mva
-              <h3>1 199kr</h3>
-              <form>
                 <input type="checkbox" id="vilkårene" name="vilkårene" value="vilkårene">
                 <label for="vilkårene"> Ja, jeg godtar vilkårene</label><br>
+    
                 <input type="checkbox" id="samtykke" name="samtykke" value="samtykke">
                 <label for="samtykke"> Du bekrefter herved at opplysningene og dokumentene du har
-                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
-                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
-                    uriktige eller ufullstendige opplysninger.</label><br>
-              </form>
-        </article>
-        <input type="submit" value="Submit">
+                    oppgitt er korrekte og fullstendige.</label>
+            </form>
+            <input type="submit" value="Submit">
+        </section>
     </main>
-    <footer>
-        <div id="kontaktElement">
-        <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
-        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-        <h3>KONTAKT</h3>
-        <adress>
-            <img src="img/icons/adress_icon.png"> Adresse: BRA Veien 4, 1757 Halden
-            <img src="img/icons/telephone_icon.png"> Telefon: 69 60 80 00</a>
-            <img src="img/icons/email_icon.png"><a href="mailto:annabb@hiof.no"> Email: annabb@hiof.no</a>
-            <img src="img/icons/opening_time.png"> 08:00-15:00</a>
-        </adress>
-        <h3>SNARVEIER<h3>
-        <a href="#">Produkter</a>
-        <a href="#">Kategorier</a>
-        <a href="#">Kontakt oss</a>
-        <h3>SOSIALE MEDIER</h3>
-        <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-        <a href="http://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-        <a href="http://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
-        <a href="http://www.pinterest.com" target="_blank" class="fa fa-pinterest"></a>
-    </div>
+    </main>
+    <footer class="footer">
+        <hr class="footer-divider">
+        <div class="footer-logo-container">
+            <img id="main-logo" src="img/logo.png" class="footer-logo-img"><a href="index.html"></a>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>KONTAKT</h3>
+                <p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                <p><i class="fa fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+                <p><i class="fa fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
+                <p><img src="icons/opening_time.png"> <strong>Åpningstider:</strong> Stenger 15:00</p>
+            </div>
+            <div class="footer-links">
+                <h3>SNARVEIER</h3>
+                <ul>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>SOSIALE MEDIER</h3>
+                <div class="social-icons">
+                    <a href="http://www.facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="http://www.linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="Linkedin"></a>
+                    <a href="http://www.pinterest.com" target="_blank"><img src="icons/pinterest.png" alt="Pienterest"></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
 </body>
