@@ -12,10 +12,11 @@
         <header class="header">
             <div class="header-left">
                 <div class="search-container">
-                    <input type="search" placeholder="Søk her" class="search-input">
+                    <input type="search" class="search-input" placeholder="Søk her">
+                    <i class="fa fa-search"></i>
                 </div>
-                <div class="menu-left">
-                    <nav>
+                <div>
+                    <nav class="menu-left">
                         <ul>
                             <li><a href="index.html">Hjem</a></li>
                             <li><a href="#element">Produkter</a></li>
@@ -221,35 +222,44 @@
                 </div>
             <label>
         </section>
-        
         <section class="payment-section">
             <h2>4. BETALING</h2>
-            <h3>BETAL MED KORT</h3>
+            <h3>BETAL MED KORT <i class="fa fa-credit-card"></i></h3>
             <form class="payment-form">
-                <label for="kortnummer">Kortnummer</label>
-                <input type="text" id="kortnummer" name="kortnummer" value="342342***4435" required>
-    
-                <label for="dato">Utløpsdato</label>
-                <input type="text" id="dato" name="dato" value="mm/dd/yyyy" required>
-    
-                <label for="cvs//cvv">CVS/CVV</label>
-                <input type="text" id="cvs//cvv" name="cvs//cvv" value="CVS//CVV*" required>
+               
+                <div class="payment-row">
+                    <div class="payment-input">
+                        <label for="kortnummer">Kortnummer</label>
+                        <input type="text" id="kortnummer" name="kortnummer" placeholder="342342****4435" required>
+                    </div>
+                </div>
+                <div class="payment-row">
+                    <div class="payment-input">
+                        <label for="dato">Utløpsdato</label>
+                        <input type="text" id="dato" name="dato" placeholder="mm / dd / yyyy" required>
+                    </div>
+                    <div class="payment-input">
+                        <label for="cvs-cvv">CVC/CVV</label>
+                        <input type="text" id="cvs-cvv" name="cvs-cvv" placeholder="CVC/CVV" required>
+                    </div>
+                </div>
             </form>
-    
             <div class="total-cost">
-                <p>Å betale inkl. mva</p>
-                <h3>1 199kr</h3>
+                <p>Å betale inkl. mva.</p>
+                <h3>1 199 kr</h3>
             </div>
-    
-            <form>
-                <input type="checkbox" id="vilkårene" name="vilkårene" value="vilkårene">
-                <label for="vilkårene"> Ja, jeg godtar vilkårene</label><br>
-    
-                <input type="checkbox" id="samtykke" name="samtykke" value="samtykke">
-                <label for="samtykke"> Du bekrefter herved at opplysningene og dokumentene du har
-                    oppgitt er korrekte og fullstendige.</label>
-            </form>
-            <input type="submit" value="Submit">
+            <button type="button" class="complete-purchase">Fullfør kjøp</button>
+            <div class="terms-section">
+                <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
+                <div class="checkbox-section">
+                    <label>
+                        <input type="checkbox"> Ja takk! Send nyhetsbrev til meg.
+                    </label>
+                    <label>
+                        <input type="checkbox"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                    </label>
+                </div>
+            </div>
         </section>
     </main>
     </main>
