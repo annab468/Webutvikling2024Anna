@@ -8,82 +8,119 @@
     <title>Nettbutikk | Product</title>
 </head>
 <body>
-<div>
-    <header>
-        <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
-        <nav>
-            <ul class="flex-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#element">Produkter</a></li>
-                <li><a href="#otherElement">Kategorier</a></li>
-                <li><a href="#kontaktElement">Kontakt oss</a></li>
-            </ul>
-            
-            <a href="#" class="fa fa-user"></a>
-            <a href="#" class="fa fa-heart"></a>
-            <a href="checkout.html" class="fa fa-shopping-cart"></a>
-            <form>
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                <input type="submit" value="søk">
-            </form>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div class="search-container">
+                    <input type="search" placeholder="Søk her" class="search-input">
+                </div>
+                <div class="menu-left">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Hjem</a></li>
+                            <li><a href="#element">Produkter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-center">
+                <a href="index.html" class="logo">
+                    <img id="main-logo" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-right">
+                    <nav class="menu-right">
+                        <ul>
+                            <li><a href="#otherElement">Kategorier</a></li>
+                            <li><a href="#kontaktElement">Kontakt oss</a></li>
+                        </ul>
+                    </nav>
+                <div class="user-panel">
+                    <a href="#" class="fa fa-user"></a>
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="checkout.html" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </header>
     <main>
         <ul class="breadcrumb">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="index.html/otherElement">Kategorier</a></li>
             <li><a href="product.html">Product</a></li>
           </ul>
-        <article>
-            <img src="img/main_product.png" alt="product name"></a>
-            Produktnavn
-            <a href="#">Markenavn</a>
-            <p>5 195 kr inkl. mva.</p>
-            <p>Farge: beige</p>
-            <img src="img/main_product.png">
-            <img src="img/main_product.png">
-            <img src="img/main_product.png">
-        </article>
-        <article>
-            <h3>Ligende produkter</h3> 
-            <img src="img/other_product.png">
-            <p>Produktnavn</p>
-            <p>Kr 1999</p>
-            <img src="img/other_product.png">
-            <p>Produktnavn</p>
-            <p>Kr 1999</p>
-            <img src="img/other_product.png">
-            <p>Produktnavn</p>
-            <p>Kr 1999</p>
-            <img src="img/other_product.png">
-            <p>Produktnavn</p>
-            <p>Kr 1999</p>
-        </article>
-
+          <section class="product-page">
+            <div class="product-images">
+                <img src="img/main_product.png" alt="Hovedbilde" class="main-image">
+                <div class="thumbnails">
+                    <img src="img/main_product.png" alt="Bilde 1">
+                    <img src="img/main_product.png" alt="Bilde 2">
+                    <img src="img/main_product.png" alt="Bilde 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Produktnavn</h1>
+                <a href="#" class="brand-name">MERKENAVN</a>
+                <p class="price">5 195 kr inkl. mva.</p>
+                <p class="color">Farge: <span>Beige</span></p>
+                
+                <div class="size-selector">
+                    <label for="size">Velg størrelse</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button class="add-to-cart">Legg i handlekurv</button>
+                <button class="wishlist"><i class="fa fa-heart"></i></button>
+                <div class="details">
+                    <h3>Materiale og vedlikehold</h3>
+                    <p>Beskrivelse av materialet og hvordan produktet skal vedlikeholdes.</p>
+                    <h3>Produktdetaljer</h3>
+                    <p>Detaljert informasjon om produktet.</p>
+                    <h3>Størrelsestabell</h3>
+                    <p>Informasjon om størrelser.</p>
+                    <h3>Anmeldelser</h3>
+                    <div class="reviews">
+                        <span>⭐⭐⭐⭐☆</span>
+                    <p>32 anmeldelser</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <link rel="stylesheet" href="css/css/all.min.css">
-        <div id="kontaktElement">
-        <img id="main-logo" src="img/logo.png"><a href="index.html"></a>
-        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-        <h3>KONTAKT</h3>
-        <adress>
-            <img src="img/icons/adress_icon.png"> Adresse: BRA Veien 4, 1757 Halden
-            <img src="img/icons/telephone_icon.png"> Telefon: 69 60 80 00</a>
-            <img src="img/icons/email_icon.png"><a href="mailto:annabb@hiof.no"> Email: annabb@hiof.no</a>
-            <img src="img/icons/opening_time.png"> 08:00-15:00</a>
-        </adress>
-        <h3>SNARVEIER<h3>
-        <a href="#">Produkter</a>
-        <a href="#">Kategorier</a>
-        <a href="#">Kontakt oss</a>
-        <h3>SOSIALE MEDIER</h3>
-        <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-        <a href="http://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-        <a href="http://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
-        <a href="http://www.pinterest.com" target="_blank" class="fa fa-pinterest"></a>
-    </div>
+    <footer class="footer">
+        <hr class="footer-divider">
+        <div class="footer-logo-container">
+            <img id="main-logo" src="img/logo.png" class="footer-logo-img"><a href="index.html"></a>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>KONTAKT</h3>
+                <p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                <p><i class="fa fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+                <p><i class="fa fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
+                <p><img src="icons/opening_time.png"> <strong>Åpningstider:</strong> Stenger 15:00</p>
+            </div>
+            <div class="footer-links">
+                <h3>SNARVEIER</h3>
+                <ul>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>SOSIALE MEDIER</h3>
+                <div class="social-icons">
+                    <a href="http://www.facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="http://www.linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="Linkedin"></a>
+                    <a href="http://www.pinterest.com" target="_blank"><img src="icons/pinterest.png" alt="Pienterest"></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
 </body>
