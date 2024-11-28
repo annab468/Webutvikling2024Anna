@@ -184,17 +184,44 @@
         <section class="delivery-options">
             <h2>3. LEVERING</h2>
             <h3>Leveringsvalg</h3>
-            <form>
-                <input type="radio" id="expresslevering" name="levering" value="Express">
-                <label for="expresslevering"> Express hjemlevering</label><br>
-    
-                <input type="radio" id="expresspakke" name="levering" value="Express Pakke">
-                <label for="expresspakke"> Express Pakke til utleveringssted</label><br>
-    
-                <input type="radio" id="standardlevering" name="levering" value="Standard">
-                <label for="standardlevering"> Standard Hjemlevering</label>
-            </form>
+            <label class="delivery-option">
+                <input type="radio" name="delivery" value="express-hjemlevering">
+                <div class="left">
+                    <p class="title">Express Hjemlevering</p>
+                    <p class="subtitle">3-4 Virkedager</p>
+                    <p class="description">bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                </div>
+                <div class="right">
+                    <p class="price">59 kr</p>
+                    <i class="icon fa fa-truck"></i> 
+                </div>
+            </label>
+            <label class="delivery-option">
+                <input type="radio" name="delivery" value="express-hjemlevering">
+                <div class="left">
+                    <p class="title">Ekspress Pakke til utleveringssted</p>
+                    <p class="subtitle">1-3 Virkedager</p>
+                    <p class="description">For levering til postnummer 4000-7999 er leveringstiden 1 arbeidsdag, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                </div>
+                <div class="right">
+                    <p class="price">59 kr</p>
+                    <i class="icon fa fa-box"></i> 
+                </div>
+            </label>
+            <label class="delivery-option">
+                <input type="radio" name="delivery" value="express-hjemlevering">
+                <div class="left">
+                    <p class="title">Standard Hjemlevering</p>
+                    <p class="subtitle">5-8 Virkedager</p>
+                    <p class="description">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                </div>
+                <div class="right">
+                    <p class="price">Gratis</p>
+                    <i class="icon fa fa-shopping-bag"></i> 
+                </div>
+            <label>
         </section>
+        
         <section class="payment-section">
             <h2>4. BETALING</h2>
             <h3>BETAL MED KORT</h3>
