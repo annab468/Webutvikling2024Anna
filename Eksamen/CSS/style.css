@@ -884,13 +884,43 @@ body {
 }
 
 .details h3 {
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
     margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
 }
 
+.details p {
+    display: none; 
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.details h3.active {
+    color: #545f6b;
+}
+
+.details h3.active + p {
+    display: block;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.reviews span {
+    font-size: 16px;
+    margin-right: 10px;
+}
 
  
 
