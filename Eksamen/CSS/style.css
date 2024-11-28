@@ -893,6 +893,7 @@ body {
     margin: 0;
     padding: 10px 0;
     border-top: 1px solid #ddd;
+    align-items: center;
 }
 
 .details p {
@@ -943,20 +944,33 @@ body {
 }
 
 
+.details .reviews {
+    display: none; 
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+.reviews .review p {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
 
+.reviews .review p {
+    display: block;
+    margin: 5px 0;
+}
 
-
-
-.reviews {
+.reviews .review span:first-child {
+    font-weight: bold;
+}
+.stars {
+    font-size: 14px;
+    color: #eef10f; 
     display: flex;
     align-items: center;
-    font-size: 14px;
 }
 
-.reviews span {
-    font-size: 16px;
-    margin-right: 10px;
-}
 
  
 
