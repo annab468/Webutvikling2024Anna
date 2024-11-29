@@ -7,73 +7,66 @@
     <link rel="stylesheet" href="css/css/all.min.css">
     <title>Nettbutikk | Forside</title>
 </head>
-<body>
-    <div class="container">
+<body class="container">
         <header class="header">
-            <div class="header-left">
-                <div class="search-container">
+            <nav class="header-left">
+                <form class="search-container">
                     <input type="search" placeholder="Søk her" class="search-input">
-                </div>
-                <div class="menu-left">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Hjem</a></li>
-                            <li><a href="#product-list">Produkter</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="header-center">
+                </form>
+                <ul class="menu-left">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#product-list">Produkter</a></li>
+                </ul>
+            </nav>
+            <section class="header-center">
                 <a href="index.html" class="logo">
                     <img id="main-logo" src="img/logo.png" alt="logo">
                 </a>
-            </div>
-            <div class="header-right">
-                    <nav class="menu-right">
-                        <ul>
-                            <li><a href="#categories">Kategorier</a></li>
-                            <li><a href="#kontakt-ref">Kontakt oss</a></li>
-                        </ul>
-                    </nav>
-                <div class="user-panel">
+            </section>
+            <nav class="header-right">
+                <ul class="menu-right">
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#kontakt-ref">Kontakt oss</a></li>
+                </ul>
+                <section class="user-panel">
                     <a href="#" class="fa fa-user"></a>
                     <a href="#" class="fa fa-heart"></a>
                     <a href="checkout.html" class="fa fa-shopping-cart"></a>
-                </div>
-            </div>
+                </section>
+            </nav>
         </header>
         <main>
             <section  class="mobile-banner">
                 <img src="img/other_product.png" alt="Mobile banner" class="mobile-banner-image">
-                <div class="mobile-banner-text">
+                <article class="mobile-banner-text">
                     <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h1>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." </p>
                     <a href="#" class="mobile-banner-btn">LES MER</a>
-                </div>
+                </article >
             </section>
             <section id="product-slider" class="slider">
                 <div class="slider-container">
-                    <div class="slider-item">
+                    <article class="slider-item">
                         <img src="img/nature.webp" alt="slider1">
                         <div class="slider-info">
                             <h2>Product 1</h2>
                             <p>Product 1 is nice and you should have it.</p>
                         </div>
-                    </div>
-                    <div class="slider-item">
+                    </article>
+                    <article  class="slider-item">
                         <img src="img/other_product2.webp" alt="slider2">
                         <div class="slider-info">
                             <h2>Product 2</h2>
                             <p>Product 2 is nice and you can have it.</p>
                         </div>
-                    </div>
-                    <div class="slider-item">
+                    </article >
+                    <article class="slider-item">
                         <img src="img/doggo.jpg" alt="slider3">
                         <div class="slider-info">
                             <h2>Product 3</h2>
                             <p>Product 3 is the best.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <button class="slider-btn left">&lt;</button>
                 <button class="slider-btn right">&gt;</button>
@@ -81,17 +74,17 @@
             <section id="product-list" class="products">
                 <h2>Våre mest populære produkter</h2>     
                 <h3>Oppdag det beste av det beste</h3>
-                <div class="product-button">
+                <div class="product-buttons">
                     <button type="button">New product</button>
                     <button type="button">Special Price</button>
                     <button type="button">Best Sellers</button>
                 </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="wishlist-icon">
+                <section  class="product-grid">
+                    <article class="product-card">
+                        <span class="wishlist-icon">
                             <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
                         <div class="product-info">
                             <h4 class="product-title">Product name</h4>
                             <p class="product-price">1999 kr</p>
@@ -104,68 +97,50 @@
                             <span class="fa fa-star "></span>
                             <p class="review-count">876 Reviews</p>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="wishlist-icon">
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">
                             <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
                         <div class="product-info">
-                            <h4 class="product-title">Product name2</h4>
+                            <h4 class="product-title">Product name</h4>
                             <p class="product-price">1999 kr</p>
                         </div>
                         <div class="product-rating">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                             <p class="review-count">876 Reviews</p>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="wishlist-icon">
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">
                             <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
                         <div class="product-info">
-                            <h4 class="product-title">Product name3</h4>
+                            <h4 class="product-title">Product name</h4>
                             <p class="product-price">1999 kr</p>
                         </div>
                         <div class="product-rating">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                             <p class="review-count">876 Reviews</p>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="wishlist-icon">
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">
                             <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
                         <div class="product-info">
-                            <h4 class="product-title">Product name4</h4>
-                            <p class="product-price">1999 kr</p>
-                        </div>
-                        <div class="product-rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <p class="review-count">321 Reviews</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="wishlist-icon">
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
-                        <div class="product-info">
-                            <h4 class="product-title">Product name5</h4>
+                            <h4 class="product-title">Product name</h4>
                             <p class="product-price">1999 kr</p>
                         </div>
                         <div class="product-rating">
@@ -173,17 +148,17 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
                             <p class="review-count">876 Reviews</p>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="wishlist-icon">
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">
                             <i class="fa fa-heart"></i>
-                        </div>
-                        <a href="product.html"><img src="img/product.jpg" class="product-image"></a>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
                         <div class="product-info">
-                            <h4 class="product-title">Product nam6</h4>
+                            <h4 class="product-title">Product name</h4>
                             <p class="product-price">1999 kr</p>
                         </div>
                         <div class="product-rating">
@@ -192,41 +167,59 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
-                            <p class="review-count">345 Reviews</p>
+                            <p class="review-count">876 Reviews</p>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                        <a href="product.html"><img src="img/product.jpg" class="product-image" alt="product-image1"></a>
+                        <div class="product-info">
+                            <h4 class="product-title">Product name</h4>
+                            <p class="product-price">1999 kr</p>
+                        </div>
+                        <div class="product-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <p class="review-count">876 Reviews</p>
+                        </div>
+                    </article>
+                </section>
             </section>
             <section id="categories" class="categories-section">
                 <h2>Vår mest populære kategorier</h2>
                 <h3>Oppdag det beste av det beste</h3>
-                <div class="categories-grid">
-                    <div class="category wide">
+                <section class="categories-grid">
+                    <article  class="category wide">
                         <img src="img/cat1.jpg" alt="CATEGORY 1">
                         <h4>CATEGORY 1</h4>
-                    </div>
-                    <div class="category tall">
+                    </article>
+                    <article class="category tall">
                         <img src="img/cat2.webp" alt="CATEGORY 2">
                         <h4>CATEGORY 2</h4>
-                    </div>
-                    <div class="category small">
+                    </article>
+                    <article class="category small">
                         <img src="img/cat3.jpg" alt="CATEGORY 3">
                         <h4>CATEGORY 3</h4>
-                    </div>
-                    <div class="category small">
+                    </article>
+                    <article class="category small">
                         <img src="img/cat4.jpg" alt="CATEGORY 4">
                         <h4>CATEGORY 4</h4>
-                    </div>
-                    <div class="category wide">
+                    </article>
+                    <article class="category wide">
                         <img src="img/cat5.jpg" alt="CATEGORY 5">
                         <h4>CATEGORY 5</h4>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </section>
             <section id="reviews" class="reviews-section">
                 <h2>Reviews</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
+                <section class="reviews-grid">
+                    <article class="review-card">
                         <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
                         <h3>Samo Samoyed</h3>
                         <div class="stars">
@@ -239,36 +232,8 @@
                         <p>
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                         </p>
-                    </div>
-                    <div class="review-card">
-                        <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
-                        <h3>Samo Samoyed</h3>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        </p>
-                    </div>
-                    <div class="review-card">
-                        <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
-                        <h3>Samo Samoyed</h3>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        </p>
-                    </div>
-                    <div class="review-card">
+                    </article>
+                    <article class="review-card">
                         <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
                         <h3>Samo Samoyed</h3>
                         <div class="stars">
@@ -276,16 +241,44 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star checked"></span>
                         </div>
                         <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                         </p>
-                    </div>
-                </div>
-                <div class="reviews-slider">
-                    <div class="reviews-slider-container">
-                        <div class="review-slide">
+                    </article>
+                    <article class="review-card">
+                        <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
+                        <h3>Samo Samoyed</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        </p>
+                    </article>
+                    <article class="review-card">
+                        <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
+                        <h3>Samo Samoyed</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        </p>
+                    </article>
+                </section>
+                <section class="reviews-slider">
+                    <ul class="reviews-slider-container">
+                        <li class="review-slide">
                             <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
                             <h3>Samo Samoyed</h3>
                             <div class="stars">
@@ -298,73 +291,72 @@
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                             </p>
-                        </div>
-                        <div class="review-slide">
+                        </li>
+                        <li class="review-slide">
                             <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
                             <h3>Samo Samoyed</h3>
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </div>
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                             </p>
-                        </div>
-                        <div class="review-slide">
+                        </li>
+                        <li class="review-slide">
                             <img src="img/customer.jpeg" alt="Samo Samoyed" class="review-avatar">
                             <h3>Samo Samoyed</h3>
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </div>
                             <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                             </p>
-                        </div>
-                    </div>
-                </div>
+                        </li>
+                    </ul>
+                </section>
             </section>            
         </main>
         <footer id="kontakt-ref" class="footer">
             <hr class="footer-divider">
-            <div class="footer-logo-container">
-                <img id="main-logo" src="img/logo.png" class="footer-logo-img"><a href="index.html"></a>
+            <section class="footer-logo-container">
+                <img id="main-logo1" src="img/logo.png" class="footer-logo-img" alt="main-logo1" ><a href="index.html"></a>
                 <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-            </div>
-            <div class="footer-container">
-                <div class="footer-contact">
+            </section>
+            <section class="footer-container">
+                <article class="footer-contact">
                     <h3>KONTAKT</h3>
                     <p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
                     <p><i class="fa fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
                     <p><i class="fa fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
-                    <p><img src="icons/opening_time.png"> <strong>Åpningstider:</strong> Stenger 15:00</p>
-                </div>
-                <div class="footer-links">
+                    <p><img src="icons/opening_time.png" alt="opening-time"> <strong>Åpningstider:</strong> Stenger 15:00</p>
+                </article>
+                <article class="footer-links">
                     <h3>SNARVEIER</h3>
                     <ul>
-                        <li><a href="#">Produkter</a></li>
-                        <li><a href="#">Kategorier</a></li>
-                        <li><a href="#">Kontakt oss</a></li>
+                        <li><a href="#product-list">Produkter</a></li>
+                        <li><a href="#categories">Kategorier</a></li>
+                        <li><a href="#kontakt-ref">Kontakt oss</a></li>
                     </ul>
-                </div>
-                <div class="footer-social">
+                </article>
+                <article class="footer-social">
                     <h3>SOSIALE MEDIER</h3>
-                    <div class="social-icons">
+                    <article class="social-icons">
                         <a href="http://www.facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
                         <a href="http://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
                         <a href="http://www.linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="Linkedin"></a>
                         <a href="http://www.pinterest.com" target="_blank"><img src="icons/pinterest.png" alt="Pienterest"></a>
-                    </div>
-                </div>
-            </div>
+                    </article>
+                </article>
+            </section>
         </footer>
-    </div>
 <script src="slider.js"></script>
 </body>
 </html>

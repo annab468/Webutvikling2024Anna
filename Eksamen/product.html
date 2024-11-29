@@ -8,84 +8,77 @@
     <title>Nettbutikk | Product</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-left">
-                <div class="search-container">
-                    <input type="search" placeholder="Søk her" class="search-input">
-                </div>
-                <div class="menu-left">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Hjem</a></li>
-                            <li><a href="index.html#product-list">Produkter</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="header-center">
-                <a href="index.html" class="logo">
-                    <img id="main-logo" src="img/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="header-right">
-                    <nav class="menu-right">
-                        <ul>
-                            <li><a href="index.html#categories">Kategorier</a></li>
-                            <li><a href="index.html#kontakt-ref">Kontakt oss</a></li>
-                        </ul>
-                    </nav>
-                <div class="user-panel">
-                    <a href="#" class="fa fa-user"></a>
-                    <a href="#" class="fa fa-heart"></a>
-                    <a href="checkout.html" class="fa fa-shopping-cart"></a>
-                </div>
-            </div>
-        </header>
+    <header class="header">
+        <nav class="header-left">
+            <form class="search-container">
+                <input type="search" placeholder="Søk her" class="search-input">
+            </form>
+            <ul class="menu-left">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#product-list">Produkter</a></li>
+            </ul>
+        </nav>
+        <section class="header-center">
+            <a href="index.html" class="logo">
+                <img id="main-logo" src="img/logo.png" alt="logo">
+            </a>
+        </section>
+        <nav class="header-right">
+            <ul class="menu-right">
+                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="index.html#kontakt-ref">Kontakt oss</a></li>
+            </ul>
+            <section class="user-panel">
+                <a href="#" class="fa fa-user"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="checkout.html" class="fa fa-shopping-cart"></a>
+            </section>
+        </nav>
+    </header>
     <main>
         <ul class="breadcrumb">
             <li><a href="index.html">Hjem</a></li>
-            <span class="separator">></span>
+            <li class="separator">></li>
             <li><a href="index.html/otherElement">Kategorier</a></li>
-            <span class="separator">></span>
+            <li class="separator">></li>
             <li class="current"><a href="product.html">Product</a></li>
         </ul>
         <section class="product-page">
-            <div class="product-images">
-                <div class="thumbnails">
+            <article class="product-images">
+                <nav class="thumbnails">
                     <img src="img/main_product.png" alt="Bilde 1">
                     <img src="img/main_product.png" alt="Bilde 2">
                     <img src="img/main_product.png" alt="Bilde 3">
-                </div>
-                <div class="main-image">
+                </nav>
+                <figure class="main-image">
                     <img src="img/main_product.png" alt="Main picture">
-                </div>
-            </div>
-            <div class="product-details">
+                </figure>
+            </article>
+            <article class="product-details">
                 <h1>Produktnavn</h1>
                 <a href="#" class="brand-name">MERKENAVN</a>
                 <p class="price">5 195 kr inkl. mva.</p>
                 <p class="color">Farge: <span>Beige</span></p>
                 
-                <div class="size-selector">
+                <section class="size-selector">
                     <select id="size">
-                        <option value="">Velg størrelse</label>
+                        <option value="">Velg størrelse</option>
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                     </select>
-                </div>
-                <div class="add-to-cart">
+                </section>
+                <section class="add-to-cart">
                     <button>Legg i handlekurv</button>
                     <button class="wishlist"><i class="fa fa-heart"></i></button>
-                </div>
-                <div class="details">
+                </section>
+                <article class="details">
                     <h3>Materiale og vedlikehold<span class="toggle">+</span></h3>
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                     <h3>Produktdetaljer <span class="toggle">+</span></h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <h3>Størrelsestabell <span class="toggle">+</span></h3>
-                        <div class="size-chart">
+                        <section class="size-chart">
                             <p>Her kan du finne vår størrelseguide:</p>
                             <table>
                                 <thead>
@@ -135,134 +128,134 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </section>
                     <h3>
                         <span>Anmeldelser</span>
                         <span class="toggle">⭐⭐⭐⭐☆ 32</span>
                     </h3>
-                    <div class="reviews">
-                        <div class="review">
+                    <section class="reviews">
+                        <article class="review">
                             <p>
-                                <span>Samo Samoyed</strong></span>
+                                <span><strong>Samo Samoyed</strong></span>
+                                <span>2024-11-09</span>
+                                <span>⭐⭐⭐⭐☆</span>
+                                <span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </p>
+                        </article>
+                        <article class="review">
+                            <p>
+                                <span><strong>Samo Samoyed</strong></span>
                                 <span>2024-11-09</span>
                                 <span>⭐⭐⭐⭐☆</span>
                                 <span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
                             </p>
-                        </div>
-                        <div class="review">
-                            <p>
-                                <span>Samo Samoyed</strong></span>
-                                <span>2024-11-09</span>
-                                <span>⭐⭐⭐⭐☆</span>
-                                <span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </article>
+                    </section>
+                </article>
+            </article>
         </section>
         <section class="similar-products">
-            <div class="section-header">
+            <article class="section-header">
                 <h2>Ligende produkter</h2>
                 <a href="#" class="see-more">Se flere lignende produkter →</a>
-            </div>
-            <div class="product-slider">
-                <div class="product-card">
+            </article>
+            <section class="product-slider">
+                <article class="product-card">
                     <img src="img/product1.jpg" alt="Product 1">
-                    <div class="product-header">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
-                <div class="product-card">
-                    <img src="img/product1.jpg" alt="Product 2">
-                    <div class="product-header">
+                </article>
+                <article class="product-card">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
-                <div class="product-card">
-                    <img src="img/product1.jpg" alt="Product 3">
-                    <div class="product-header">
+                </article>
+                <article class="product-card">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
-                <div class="product-card">
-                    <img src="img/product1.jpg" alt="Product 4">
-                    <div class="product-header">
+                </article>
+                <article class="product-card">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
-                <div class="product-card">
-                    <img src="img/product1.jpg" alt="Product 5">
-                    <div class="product-header">
+                </article>
+                <article class="product-card">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
-                <div class="product-card">
-                    <img src="img/product1.jpg" alt="Product 6">
-                    <div class="product-header">
+                </article>
+                <article class="product-card">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <section class="product-header">
                         <p class="product-name">Product name</p>
                         <p class="product-price2">Kr 1999</p>
-                    </div>
+                    </section>
                     <p class="product-reviews">
                         ⭐⭐⭐⭐☆ 842 Reviews
                     </p>
-                </div>
+                </article>
+            </section>
         </section>
     </main>
     <footer id="kontakt-ref" class="footer">
         <hr class="footer-divider">
-        <div class="footer-logo-container">
-            <img id="main-logo" src="img/logo.png" class="footer-logo-img"><a href="index.html"></a>
+        <section class="footer-logo-container">
+            <img id="main-logo1" src="img/logo.png" class="footer-logo-img" alt="main-logo1" ><a href="index.html"></a>
             <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-        </div>
-        <div class="footer-container">
-            <div class="footer-contact">
+        </section>
+        <section class="footer-container">
+            <article class="footer-contact">
                 <h3>KONTAKT</h3>
                 <p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
                 <p><i class="fa fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
                 <p><i class="fa fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
-                <p><img src="icons/opening_time.png"> <strong>Åpningstider:</strong> Stenger 15:00</p>
-            </div>
-            <div class="footer-links">
+                <p><img src="icons/opening_time.png" alt="opening-time"> <strong>Åpningstider:</strong> Stenger 15:00</p>
+            </article>
+            <article class="footer-links">
                 <h3>SNARVEIER</h3>
                 <ul>
-                    <li><a href="#">Produkter</a></li>
-                    <li><a href="#">Kategorier</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#product-list">Produkter</a></li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#kontakt-ref">Kontakt oss</a></li>
                 </ul>
-            </div>
-            <div class="footer-social">
+            </article>
+            <article class="footer-social">
                 <h3>SOSIALE MEDIER</h3>
-                <div class="social-icons">
+                <article class="social-icons">
                     <a href="http://www.facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
                     <a href="http://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
                     <a href="http://www.linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="Linkedin"></a>
                     <a href="http://www.pinterest.com" target="_blank"><img src="icons/pinterest.png" alt="Pienterest"></a>
-                </div>
-            </div>
-        </div>
+                </article>
+            </article>
+        </section>
     </footer>
-</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -20,7 +20,6 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 
@@ -100,9 +99,10 @@ body {
     padding: 0;
     margin: 0;
     margin-right: 10px;
+    list-style: none;
 }
 
-.menu-left ul li a {
+.menu-left nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 1rem;
@@ -116,10 +116,11 @@ body {
     margin: 0;
 }
 
-.menu-right ul li a {
+.menu-right nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 1rem;
+    list-style: none;
 }
 
 .user-panel {
@@ -419,7 +420,7 @@ body {
     justify-content: center;
     gap: 15px;
 }
-.product-button button {
+.product-buttons button {
     background-color: transparent; 
     border: 1px solid #000; 
     color: #000; 
@@ -434,7 +435,6 @@ body {
     background-color: #000; 
     color: #fff; 
 }
-
 
 
 .categories-section {

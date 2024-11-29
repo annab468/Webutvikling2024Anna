@@ -8,179 +8,169 @@
     <title>Nettbutikk | Checkout</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-left">
-                <div class="search-container">
-                    <input type="search" class="search-input" placeholder="Søk her">
-                    <i class="fa fa-search"></i>
-                </div>
-                <div>
-                    <nav class="menu-left">
-                        <ul>
-                            <li><a href="index.html">Hjem</a></li>
-                            <li><a href="index.html#product-list">Produkter</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="header-center">
-                <a href="index.html" class="logo">
-                    <img id="main-logo" src="img/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="header-right">
-                    <nav class="menu-right">
-                        <ul>
-                            <li><a href="index.html#categories">Kategorier</a></li>
-                            <li><a href="index.html#kontakt-ref">Kontakt oss</a></li>
-                        </ul>
-                    </nav>
-                <div class="user-panel">
-                    <a href="#" class="fa fa-user"></a>
-                    <a href="#" class="fa fa-heart"></a>
-                    <a href="checkout.html" class="fa fa-shopping-cart"></a>
-                </div>
-            </div>
-        </header>
+    <header class="header">
+        <nav class="header-left">
+            <form class="search-container">
+                <input type="search" placeholder="Søk her" class="search-input">
+            </form>
+            <ul class="menu-left">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#product-list">Produkter</a></li>
+            </ul>
+        </nav>
+        <section class="header-center">
+            <a href="index.html" class="logo">
+                <img id="main-logo" src="img/logo.png" alt="logo">
+            </a>
+        </section>
+        <nav class="header-right">
+            <ul class="menu-right">
+                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="index.html#kontakt-ref">Kontakt oss</a></li>
+            </ul>
+            <section class="user-panel">
+                <a href="#" class="fa fa-user"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="checkout.html" class="fa fa-shopping-cart"></a>
+            </section>
+        </nav>
+    </header>
     <main>
-        <div class="continue-shopping">
+        <section class="continue-shopping">
             <a href="index.html">
                 <i class="fa fa-arrow-left"></i> Fortsett å handle
             </a>
-        </div>
-        <h1>
-            <div class="kasse">Kasse</div>
-        </h1>
+        </section>
+        <h1 class="kasse">Kasse</h1>
         <section class="shopping-cart">
             <h2>1. SHOPPINGBAGEN DIN</h2>
-            <div class="checkout-cart-item">
+            <article class="checkout-cart-item">
                 <img src="img/main_product.png" alt="Product image" class="checkout-image">
-                <div class="checkout-item-details">
+                <section class="checkout-item-details">
                     <p class="product-name-checkout">PRODUCT NAME</p>
                     <p class="product-price-checkout">Kr 1999</p>
                     <p>Farge: beige</p>
-                    <div class="checkout-product-options">
-                        <div class="option">
+                    <nav class="checkout-product-options">
+                        <section class="option">
                             <label for="size">Størrelse:</label>
                             <select id="size" name="size">
                                 <option value="S">S</option>
                                 <option value="M" selected>M</option>
                                 <option value="L">L</option>
                             </select>
-                        </div>
-                        <div class="option">
+                        </section>
+                        <section class="option">
                             <label for="quantity">Antall:</label>
                             <select id="quantity" name="quantity">
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
+                        </section>
+                    </nav>
+                </section>
                 <div class="checkout-actions">
                     <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
                     <a href="#" class="fa fa-trash" title="Remove"></a>
                 </div>
-            </div>
-            <div class="checkout-cart-item">
+            </article>
+            <article class="checkout-cart-item">
                 <img src="img/main_product.png" alt="Product image" class="checkout-image">
-                <div class="checkout-item-details">
+                <section class="checkout-item-details">
                     <p class="product-name-checkout">PRODUCT NAME</p>
                     <p class="product-price-checkout">Kr 1999</p>
                     <p>Farge: beige</p>
-                    <div class="checkout-product-options">
-                        <div class="option">
+                    <nav class="checkout-product-options">
+                        <section class="option">
                             <label for="size">Størrelse:</label>
-                            <select id="size" name="size">
+                            <select id="size2" name="size">
                                 <option value="S">S</option>
                                 <option value="M" selected>M</option>
                                 <option value="L">L</option>
                             </select>
-                        </div>
-                        <div class="option">
+                        </section>
+                        <section class="option">
                             <label for="quantity">Antall:</label>
-                            <select id="quantity" name="quantity">
+                            <select id="quantity2" name="quantity">
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
+                        </section>
+                    </nav>
+                </section>
                 <div class="checkout-actions">
                     <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
                     <a href="#" class="fa fa-trash" title="Remove"></a>
                 </div>
-            </div>
-            <div class="checkout-cart-item">
+            </article>
+            <article class="checkout-cart-item">
                 <img src="img/main_product.png" alt="Product image" class="checkout-image">
-                <div class="checkout-item-details">
+                <section class="checkout-item-details">
                     <p class="product-name-checkout">PRODUCT NAME</p>
                     <p class="product-price-checkout">Kr 1999</p>
                     <p>Farge: beige</p>
-                    <div class="checkout-product-options">
-                        <div class="option">
+                    <nav class="checkout-product-options">
+                        <section class="option">
                             <label for="size">Størrelse:</label>
-                            <select id="size" name="size">
+                            <select id="size3" name="size">
                                 <option value="S">S</option>
                                 <option value="M" selected>M</option>
                                 <option value="L">L</option>
                             </select>
-                        </div>
-                        <div class="option">
+                        </section>
+                        <section class="option">
                             <label for="quantity">Antall:</label>
-                            <select id="quantity" name="quantity">
+                            <select id="quantity3" name="quantity">
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
+                        </section>
+                    </nav>
+                </section>
                 <div class="checkout-actions">
                     <a href="#" class="fa fa-heart favourite-icon" title="Add to favourites"></a>
                     <a href="#" class="fa fa-trash" title="Remove"></a>
                 </div>
-            </div>
+            </article>
         </section>            
         <section class="user-info">
             <h2>2. DINE OPPLYSNINGER</h2>
             
             <h3>Leveringsadresse</h3>
             <form class="address-form">
-                <div>
+                <section>
                     <label for="fname">First name:</label>
                     <input type="text" id="fname" name="fname" value="Nora*" required>
-                </div>
-                <div>    
+                </section>
+                <section>    
                     <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname" value="Nordman*" required>
-                </div>
-                <div>    
+                </section>
+                <section>    
                     <label for="gateadresse">Gate adresse</label>
                     <input type="text" id="gateadresse" name="gateadresse" value="BRA Veien 4*" required>
-                </div>
-                <div>
+                </section>
+                <section>
                     <label for="postnummer">Postnummer</label>
                     <input type="text" id="postnummer" name="postnummer" value="1752*" required>
-                </div>
-                <div>
+                </section>
+                <section>
                     <label for="poststed">Poststed</label>
                     <input type="text" id="poststed" name="poststed" value="Halden*" required>
-                </div>
+                </section>
             </form>
             <h3>Kontaktinformasjon</h3>
             <form class="contact-form">
-                <div>
+                <section>
                     <label for="e-post">E-post</label>
                     <input type="text" id="e-post" name="e-post" value="annabb@hiof.no..*" required>
-                </div>
-                <div>
+                </section>
+                <section>
                     <label for="telefon">Telefon</label>
                     <input type="text" id="telefon" name="telefon" value="+4749***018" required>
-                </div>
+                </section>
             </form>
             <form>
                 <input type="submit" value="Lagre">
@@ -192,67 +182,66 @@
             <h3>Leveringsvalg</h3>
             <label class="delivery-option">
                 <input type="radio" name="delivery" value="express-hjemlevering">
-                <div class="left">
-                    <p class="title">Express Hjemlevering</p>
-                    <p class="subtitle">3-4 Virkedager</p>
-                    <p class="description">bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
-                </div>
-                <div class="right">
-                    <p class="price">59 kr</p>
+                <span class="left">
+                    <br class="title">Express Hjemlevering
+                    <br class="subtitle">3-4 Virkedager
+                    <br class="description">bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                </span>
+                <span class="right">
+                    <br class="price">59 kr
                     <i class="icon fa fa-truck"></i> 
-                </div>
+                </span>
             </label>
             <label class="delivery-option">
                 <input type="radio" name="delivery" value="express-hjemlevering">
-                <div class="left">
-                    <p class="title">Ekspress Pakke til utleveringssted</p>
-                    <p class="subtitle">1-3 Virkedager</p>
-                    <p class="description">For levering til postnummer 4000-7999 er leveringstiden 1 arbeidsdag, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
-                </div>
-                <div class="right">
-                    <p class="price">59 kr</p>
+                <span class="left">
+                    <br class="title">Ekspress Pakke til utleveringssted
+                    <br class="subtitle">1-3 Virkedager
+                    <br class="description">For levering til postnummer 4000-7999 er leveringstiden 1 arbeidsdag, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                </span>
+                <span class="right">
+                    <br class="price">59 kr
                     <i class="icon fa fa-box"></i> 
-                </div>
+                </span>
             </label>
             <label class="delivery-option">
                 <input type="radio" name="delivery" value="express-hjemlevering">
-                <div class="left">
-                    <p class="title">Standard Hjemlevering</p>
-                    <p class="subtitle">5-8 Virkedager</p>
-                    <p class="description">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
-                </div>
-                <div class="right">
-                    <p class="price">Gratis</p>
+                <span class="left">
+                    <br class="title">Standard Hjemlevering
+                    <br class="subtitle">5-8 Virkedager
+                    <br class="description">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
+                </span>
+                <span class="right">
+                    <br class="price">Gratis
                     <i class="icon fa fa-shopping-bag"></i> 
-                </div>
-            <label>
+                </span>
+            </label>
         </section>
         <section class="payment-section">
             <h2>4. BETALING</h2>
             <h3>BETAL MED KORT <i class="fa fa-credit-card"></i></h3>
             <form class="payment-form">
-               
                 <div class="payment-row">
                     <div class="payment-input">
                         <label for="kortnummer">Kortnummer</label>
                         <input type="text" id="kortnummer" name="kortnummer" placeholder="342342****4435" required>
                     </div>
                 </div>
-                <div class="payment-row">
-                    <div class="payment-input">
+                <section class="payment-row">
+                    <section class="payment-input">
                         <label for="dato">Utløpsdato</label>
                         <input type="text" id="dato" name="dato" placeholder="mm / dd / yyyy" required>
-                    </div>
+                    </section>
                     <div class="payment-input">
                         <label for="cvs-cvv">CVC/CVV</label>
                         <input type="text" id="cvs-cvv" name="cvs-cvv" placeholder="CVC/CVV" required>
                     </div>
-                </div>
+                </section>
             </form>
-            <div class="total-cost">
+            <aside class="total-cost">
                 <p>Å betale inkl. mva.</p>
                 <h3>1 199 kr</h3>
-            </div>
+            </aside>
             <button type="button" class="complete-purchase">Fullfør kjøp</button>
             <div class="terms-section">
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
@@ -267,40 +256,38 @@
             </div>
         </section>
     </main>
-    </main>
-    <footer class="footer">
+    <footer id="kontakt-ref" class="footer">
         <hr class="footer-divider">
-        <div class="footer-logo-container">
-            <img id="main-logo" src="img/logo.png" class="footer-logo-img"><a href="index.html"></a>
+        <section class="footer-logo-container">
+            <img id="main-logo1" src="img/logo.png" class="footer-logo-img" alt="main-logo1" ><a href="index.html"></a>
             <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-        </div>
-        <div class="footer-container">
-            <div class="footer-contact">
+        </section>
+        <section class="footer-container">
+            <article class="footer-contact">
                 <h3>KONTAKT</h3>
                 <p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
                 <p><i class="fa fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
                 <p><i class="fa fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:annabb@hiof.no">annabb@hiof.no</a></p>
-                <p><img src="icons/opening_time.png"> <strong>Åpningstider:</strong> Stenger 15:00</p>
-            </div>
-            <div class="footer-links">
+                <p><img src="icons/opening_time.png" alt="opening-time"> <strong>Åpningstider:</strong> Stenger 15:00</p>
+            </article>
+            <article class="footer-links">
                 <h3>SNARVEIER</h3>
                 <ul>
-                    <li><a href="#">Produkter</a></li>
-                    <li><a href="#">Kategorier</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#product-list">Produkter</a></li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#kontakt-ref">Kontakt oss</a></li>
                 </ul>
-            </div>
-            <div class="footer-social">
+            </article>
+            <article class="footer-social">
                 <h3>SOSIALE MEDIER</h3>
-                <div class="social-icons">
+                <article class="social-icons">
                     <a href="http://www.facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
                     <a href="http://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
                     <a href="http://www.linkedin.com" target="_blank"><img src="icons/linkedin.png" alt="Linkedin"></a>
                     <a href="http://www.pinterest.com" target="_blank"><img src="icons/pinterest.png" alt="Pienterest"></a>
-                </div>
-            </div>
-        </div>
+                </article>
+            </article>
+        </section>
     </footer>
-</div>
 </body>
 </html>
